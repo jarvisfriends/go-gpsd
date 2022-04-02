@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/stratoberry/go-gpsd?status.svg)](https://godoc.org/github.com/stratoberry/go-gpsd)
+[![GoDoc](https://godoc.org/github.com/aperum/go-gpsd?status.svg)](https://godoc.org/github.com/aperum/go-gpsd)
 
 # go-gpsd
 
@@ -14,7 +14,7 @@ go-gpsd has no external dependencies.
 
 go-gpsd is a streaming client for GPSD's JSON service and as such can be used only in async manner unlike clients for other languages which support both async and sync modes.
 ```golang
-import ("github.com/stratoberry/go-gpsd")
+import ("github.com/aperum/go-gpsd")
 
 func main() {
 	gps := gpsd.Dial("localhost:2947")
