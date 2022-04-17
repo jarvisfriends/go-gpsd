@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/aperum/go-gpsd?status.svg)](https://godoc.org/github.com/aperum/go-gpsd)
+[![GoDoc](https://godoc.org/github.com/jarvisfriends/go-gpsd?status.svg)](https://godoc.org/github.com/jarvisfriends/go-gpsd)
 
 # go-gpsd
 
@@ -6,7 +6,7 @@
 
 ## Installation
 
-<pre><code># go get github.com/aperum/go-gpsd</code></pre>
+<pre><code># go get github.com/jarvisfriends/go-gpsd</code></pre>
 
 go-gpsd has no external dependencies.
 
@@ -14,7 +14,7 @@ go-gpsd has no external dependencies.
 
 go-gpsd is a streaming client for GPSD's JSON service and as such can be used only in async manner unlike clients for other languages which support both async and sync modes.
 ```golang
-import ("github.com/aperum/go-gpsd")
+import ("github.com/jarvisfriends/go-gpsd")
 
 func main() {
 	gps := gpsd.Dial("localhost:2947")
@@ -53,20 +53,20 @@ for {
 }
 ```
 
-### Currently supported GPSD report types
+### Supported GPSD report types
 
-* `VERSION` (`gpsd.VERSIONReport`)
-* `TPV` (`gpsd.TPVReport`)
-* `SKY` (`gpsd.SKYReport`)
-* `ATT` (`gpsd.ATTReport`)
-* `GST` (`gpsd.GSTReport`)
-* `PPS` (`gpsd.PPSReport`)
-* `Devices` (`gpsd.DEVICESReport`)
-* `DEVICE` (`gpsd.DEVICEReport`)
-* `ERROR` (`gpsd.ERRORReport`)
+* [`VERSION`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_version) (`gpsd.VERSIONReport`)
+* [`TPV`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_tpv) (`gpsd.TPVReport`)
+* [`SKY`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_sky) (`gpsd.SKYReport`)
+* [`ATT`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_att) (`gpsd.ATTReport`)
+* [`GST`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_gst) (`gpsd.GSTReport`)
+* [`PPS`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_pps) (`gpsd.PPSReport`)
+* [`Devices`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_devices) (`gpsd.DEVICESReport`)
+* [`DEVICE`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_device_device) (`gpsd.DEVICEReport`)
+* [`ERROR`](https://gpsd.gitlab.io/gpsd/gpsd_json.html#_error) (`gpsd.ERRORReport`)
 
 ## Documentation
 
-For complete library docs, visit [GoDoc.org](https://pkg.go.dev/github.com/aperum/go-gpsd) or take a look at the `gpsd.go` file in this repository.
+For complete library docs, visit [GoDoc.org](https://pkg.go.dev/github.com/jarvisfriends/go-gpsd) or take a look at the `gpsd.go` file in this repository.
 
-GPSD's documentation on their JSON protocol can be found at [http://catb.org/gpsd/gpsd_json.html](http://catb.org/gpsd/gpsd_json.html)
+GPSD's documentation on their JSON protocol can be found at [https://gpsd.gitlab.io/gpsd/gpsd_json.html](https://gpsd.gitlab.io/gpsd/gpsd_json.html)
